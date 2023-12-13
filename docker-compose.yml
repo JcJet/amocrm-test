@@ -1,0 +1,26 @@
+version: "3.9"
+
+services:
+
+  amocrm-test:
+    container_name: amocrm-test
+    build:
+      context: ./amocrm-test
+      dockerfile: ./Dockerfile
+      target: development
+    restart: always
+    depends_on:
+      - tokens_pg
+    ports:
+      - "3000:3000"
+
+  tokens_pg:
+    container_name: tokens_pg
+    image: postgres:15.2-alpine
+    environment:
+      POSTGRES_DB: tokens
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+    ports:
+      - "5432"
+    restart: always
