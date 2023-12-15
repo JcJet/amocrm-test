@@ -11,11 +11,11 @@
 ```
 Сервер доступен по следующему адресу, там же можно проверить эндпоинт:
 
-https://e792-78-36-249-208.ngrok-free.app/api
+https://32ac-78-36-249-208.ngrok.io/api
 
 Эндпоинт со всеми параметрами выглядит следующим образом:
 ```
-https://93e7-78-36-244-113.ngrok-free.app/create_lead?name=Vladimir&email=jet888%40mail.ru&phone=%2B78885552222
+https://32ac-78-36-249-208.ngrok.io/create_lead?name=Vladimir&email=jet888%40mail.ru&phone=%2B78885552222
 ```
 ### Запуск сервера локально
 * склонировать этот репозиторий
